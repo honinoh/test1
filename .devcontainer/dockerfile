@@ -3,3 +3,4 @@ FROM alexberkovich/alpine-anaconda3:latest
 WORKDIR /tmp/servicenow
 COPY snc-1.1.0-linux-x64-installer.run .
 
+RUN ./snc-1.1.0-linux-x64-installer.run --mode unattended
